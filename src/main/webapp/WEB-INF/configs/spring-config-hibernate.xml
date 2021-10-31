@@ -18,8 +18,8 @@
 	<bean id="dataSource" 
 	    	class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 			p:driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-			p:url="jdbc:sqlserver://localhost:1433; Database=Personel"
-			p:username="sa"
+			p:url="jdbc:sqlserver://localhost:1433; Database=LinhKienMayTinh"
+			p:username="abc"
 			p:password="123">
 	</bean>
 	
@@ -30,7 +30,7 @@
 	    <property name="hibernateProperties">
 	      <props>        
 	            <prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>          
-	            <prop key="hibernate.show_sql">false</prop>
+	            <prop key="hibernate.show_sql">true</prop>
 	       </props>
 	    </property>
 		<property name="packagesToScan" value="pvb.entity"/>
